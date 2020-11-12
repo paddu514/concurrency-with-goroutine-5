@@ -1,0 +1,21 @@
+package main 
+  
+import ( 
+    "fmt"
+    "time"
+) 
+  
+func demo(str string) { 
+    for i := 0; i < 6; i++ { 
+        time.Sleep(2 * time.Second) 
+        fmt.Println(str) 
+    } 
+} 
+  
+func main() { 
+  
+   go demo("concurrency with goroutine") 
+  
+    
+    demo("concurrency with goroutine") 
+} 
